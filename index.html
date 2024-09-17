@@ -2,19 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <!-- heading -->
+  <p>SPLI</p>
+  <p>TTER</p>
+
+  <!-- containerr -->
+  <div class="container">
+
+    <!-- left-container -->
+    <div class="left">
+
+      <!-- bill-section -->
+      <label for="bill-amount">Bill</label>
+      <div class="input-container">
+        <span class="curreny-symbol">$</span>
+        <input type="number" id="bill-amount" placeholder="0">
+      </div>
+
+      <!-- tip-section -->
+      <p>Select Tip %</p>
+      <div class="buttons">
+        <button id="tip">5%</button>
+        <button id="tip">10%</button>
+        <button id="tip">15%</button>
+        <button id="tip">25%</button>
+        <button id="tip">30%</button>
+        <button id="tip">50%</button>
+      </div>
+
+      <!-- number of people -->
+      <div class="people-input-section">
+        <div class="number-of-people">
+          <label for="people-number">Number of People</label>
+          <p></p>
+        </div>
+        <div class="people-input">
+          <input type="number" id="people-number" placeholder="0">
+        </div>
+      </div>
+    </div>
+
+    <!-- right-container -->
+    <div class="right"></div>
+  </div>
 
   Bill
 
@@ -35,10 +74,6 @@
   / person
 
   Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
 </html>
