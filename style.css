@@ -9,7 +9,16 @@ body {
     height: 100vh;
   }
   
-  .container {
+.heading{
+    margin-bottom: 20px;
+}
+.heading p{
+    letter-spacing: 10px;
+    color:   hsl(180, 29%, 25%);
+    font-weight: bolder;
+}
+
+.container {
     display: flex;
     align-items: stretch; /* Make left and right sections equal height */
     justify-content: space-between;
@@ -18,25 +27,25 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  .left, .right {
+.left, .right {
     width: 50%;
-  }
+}
   
-  .left {
+.left {
     padding: 20px;
-  }
-  .left .number-of-people{
+}
+.left .number-of-people{
     display: flex;
     justify-content: space-between;
-  }
-  .left #error{
+}
+.left #error{
     display: none;
     color: red;
-  }
+}
   
-  .right {
+.right {
     padding: 20px;
     background-color: hsl(183, 100%, 15%);
     color: white;
@@ -44,37 +53,37 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
   
-  .input-container {
+.input-container {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-  }
+}
   
-  .curreny-symbol {
+.curreny-symbol {
     padding: 10px;
     background: hsl(183, 100%, 15%);
     color: white;
     border-radius: 5px 0 0 5px;
-  }
+}
   
-  input[type="number"] {
+input[type="number"] {
     width: 100%;
     padding: 10px;
     border: 1px solid hsl(185, 41%, 84%);
     border-radius: 0 5px 5px 0;
     outline: none;
     font-size: 16px;
-  }
+}
   
-  .buttons {
+.buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-  }
+}
   
-  .buttons button {
+.buttons button {
     padding: 10px 15px;
     border: none;
     background-color: hsl(183, 100%, 15%);
@@ -84,38 +93,38 @@ body {
     font-size: 16px;
     flex-grow: 1; /* Allow buttons to fill available space */
     min-width: 75px;
-  }
+}
   
-  .buttons button:hover {
+.buttons button:hover {
     background-color: hsl(172, 67%, 45%);
-  }
+}
   
-  .people-input-section {
+.people-input-section {
     margin-top: 20px;
-  }
+}
   
-  #people-number {
+#people-number {
     width: 100%;
     padding: 10px;
     border: 1px solid hsl(185, 41%, 84%);
     border-radius: 5px;
     outline: none;
     font-size: 16px;
-  }
+}
   
-  .tip-per-person, .total-per-person {
+.tip-per-person, .total-per-person {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
-  }
+}
   
-  h1 {
+h1 {
     margin: 0;
     font-size: 36px;
-  }
+}
   
-  button#reset {
+#reset, #calculate {
     padding: 10px 0;
     border: none;
     background-color: hsl(172, 67%, 45%);
@@ -123,10 +132,11 @@ body {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-  }
+    font-weight: bold;
+}
   
-  button#reset:hover {
+#reset:hover, #calculate:hover {
     background-color: hsl(183, 100%, 15%);
     color: white;
-  }
+}
   
