@@ -27,6 +27,14 @@ body {
   .left {
     padding: 20px;
   }
+  .left .number-of-people{
+    display: flex;
+    justify-content: space-between;
+  }
+  .left #error{
+    display: none;
+    color: red;
+  }
   
   .right {
     padding: 20px;
