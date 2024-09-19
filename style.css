@@ -139,3 +139,68 @@ h1 {
     background-color: hsl(183, 100%, 15%);
     color: white;
 }
+
+/* Add media queries for RWD */
+
+/* For screens with a maximum width of 1200px */
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* For screens with a maximum width of 900px */
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 95%;
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .right {
+        margin-top: 20px;
+    }
+}
+
+/* For screens with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+    .input-container {
+        flex-direction: column;
+    }
+    .curreny-symbol {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+    input[type="number"] {
+        border-radius: 0 0 5px 5px;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* For screens with a maximum width of 400px */
+@media only screen and (max-width: 400px) {
+    .heading p {
+        font-size: 24px;
+    }
+    .container {
+        padding: 10px;
+    }
+    .left, .right {
+        padding: 10px;
+    }
+    .input-container {
+        margin-bottom: 10px;
+    }
+    .buttons button {
+        font-size: 14px;
+    }
+}
+
+/* Rest of the CSS code remains the same */
