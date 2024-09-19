@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     display: flex;
@@ -6,25 +6,119 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color: hsl(185, 41%, 84%);
-}
-
-.container{
+    height: 100vh;
+  }
+  
+  .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch; /* Make left and right sections equal height */
+    justify-content: space-between;
     width: 800px;
     background: hsl(0, 0%, 100%);
     border-radius: 10px;
-}
-
-.left{
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left, .right {
     width: 50%;
-    
-
-}
-.right{
-    width: 50%;
+  }
+  
+  .left {
+    padding: 20px;
+  }
+  
+  .right {
+    padding: 20px;
     background-color: hsl(183, 100%, 15%);
+    color: white;
     border-radius: 10px;
-    
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .curreny-symbol {
+    padding: 10px;
+    background: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid hsl(185, 41%, 84%);
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .buttons button {
+    padding: 10px 15px;
+    border: none;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    flex-grow: 1; /* Allow buttons to fill available space */
+    min-width: 75px;
+  }
+  
+  .buttons button:hover {
+    background-color: hsl(172, 67%, 45%);
+  }
+  
+  .people-input-section {
+    margin-top: 20px;
+  }
+  
+  #people-number {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid hsl(185, 41%, 84%);
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .tip-per-person, .total-per-person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  button#reset {
+    padding: 10px 0;
+    border: none;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button#reset:hover {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+  }
+  
